@@ -1,0 +1,95 @@
+/* Homepage layout based on TOP.png. Shared subpage styles remain in style.css. */
+.header__inner { padding-left: 24px; gap: 60px; }
+.logo { width: 170px; }
+.logo__icon { width: 170px; height: 97px; }
+.gnav { gap: 26px; }
+.gnav__link { font-size: 14px; }
+.photo { border: 0; }
+.hero { background: radial-gradient(ellipse at 0 100%, #f2dcb4 0 16%, transparent 52%), linear-gradient(-13deg,#fff7eb,#faf2e0); }
+.hero__blob { display: none; }
+.hero__body { align-self: start; padding-top: 40px; }
+.hero__lead { margin-top: 46px; }
+.hero__actions { display: flex; gap: 12px; margin-top: 90px; }
+.hero__action { padding: 9px 24px; border: 2px solid var(--c-accent); border-radius: 10px; background: var(--c-accent); color: white; font-family: var(--f-head); font-size: 20px; font-weight: 900; line-height: 1.3; white-space: nowrap; box-shadow: 0 8px 20px #f4a26130; }
+.hero__action--outline { background: transparent; color: var(--c-accent); box-shadow: none; }
+.hero__action:hover { opacity: .8; }
+.services { padding: 70px 0 40px; }
+.glass-card { padding: 44px 48px 36px; margin-bottom: 70px; box-shadow: 0 14px 24px #45332415; }
+.glass-card__head .num { width: 130px; }
+.glass-card__titles { padding-top: 0; max-width: 620px; }
+.glass-card__lead { font: 400 15px/1.9 var(--f-body); margin-top: 12px; color: var(--c-text-2); }
+.coating-rows { display: grid; gap: 52px; margin-top: 34px; }
+.coating-row { display: grid; grid-template-columns: minmax(0,1fr) 290px; gap: 54px; }
+.coating-row--rev { grid-template-columns: 290px minmax(0,1fr); }
+.point { min-height: 174px; align-items: flex-start; padding: 24px; }
+.point__text { max-width: 330px; }
+.coating-photo { height: 174px; border-radius: 10px; }
+.pill { background: #b98c73; }
+.coating-bottom { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-top: 62px; }
+.price-note { display: flex; gap: 28px; margin: 0; padding: 0 18px; background: none; }
+.price-note__title { white-space: nowrap; font-size: 18px; }
+.price-note p { margin: 0; font-size: 14px; }
+.coating-bottom .btn { flex: none; }
+.svc-list { gap: 40px; }
+.svc { min-height: 340px; padding: 38px 90px 18px; column-gap: 0; }
+.svc--rev { column-gap: 50px; }
+.svc .btn { margin-top: 14px; }
+.news { padding: 46px 0 58px; }
+.news .sec-head { margin-bottom: 36px; }
+.news__item { min-height: 76px; }
+.news__title { font-size: 15px; }
+.faq { padding: 56px 0 46px; }
+.faq .sec-head { margin-bottom: 48px; }
+.qa { padding: 20px 26px 24px; }
+.qa__a { margin-top: 4px; font-size: 14px; }
+.faq__list { margin-bottom: 30px; }
+.faq .sec-head__en { font-size: 36px; }
+.contact__inner { padding: 10px 68px 24px; }
+.contact .sec-head { margin-bottom: 68px; }
+.contact__body { grid-template-columns: 560px 380px; gap: 72px; margin-right: 0; }
+.contact__links { gap: 18px; }
+.contact__addr { margin-top: 36px; font-size: 14px; }
+.footer__inner { padding-top: 32px; padding-bottom: 24px; grid-template-columns: minmax(0,580px) minmax(0,1fr); }
+.footer__logo { width: 170px; height: 97px; object-fit: contain; }
+.footer__cols { padding-top: 42px; }
+.footer__copy { margin-inline: 70px; padding: 22px 0 10px; }
+@media (max-width: 1250px) {
+  .header__inner { gap: 24px; }.gnav { gap: 18px; }
+  .hero__actions { flex-wrap: wrap; margin-top: 50px; }.hero__action { font-size: 17px; }
+  .contact__body { grid-template-columns: 1.2fr 1fr; gap: 40px; }
+  .coating-row { gap: 32px; }.svc { padding-inline: 50px; column-gap: 24px; }
+}
+@media (max-width: 1024px) {
+  .header__tel { margin-left: auto; }.hero__body { padding-top: 0; }
+  .hero__lead { margin-top: 28px; }.hero__actions { margin-top: 36px; }
+  .coating-row { grid-template-columns: minmax(0,1fr) 230px; }.coating-row--rev { grid-template-columns: 230px minmax(0,1fr); }
+  .coating-bottom,.price-note { flex-wrap: wrap; }.price-note { gap: 8px; }
+  .footer__inner { grid-template-columns: 1fr 1fr; gap: 28px; }
+}
+@media (max-width: 700px) {
+  :root { --header-h: 80px; }
+  .header__inner { padding-inline: 16px; gap: 16px; }.logo,.logo__icon { width: 112px; height: 64px; }
+  .header__tel-note { display: none; }.header__tel-num { font-size: 16px; }.menu-btn { padding: 10px; gap: 4px; }
+  .hero__inner { grid-template-columns: 1fr; padding-block: 36px; gap: 30px; }
+  .hero__title { font-size: 34px; }.hero__lead { font-size: 14px; }.hero__photo { max-width: 360px; justify-self: center; }
+  .hero__actions { gap: 10px; margin-top: 28px; }.hero__action { padding: 12px 14px; font-size: 15px; }
+  .services { padding-top: 46px; }.sec-head__en { font-size: 30px; }
+  .glass-card { padding: 36px 20px 24px; margin-bottom: 32px; border-radius: 22px; }
+  .glass-card__head .num { width: 68px; }.num { font-size: 90px; }.h-lg { font-size: 24px; }
+  .glass-card__lead { font-size: 13px; }.coating-rows { gap: 24px; }
+  .coating-row,.coating-row--rev { grid-template-columns: 1fr; gap: 12px; }
+  .coating-row--rev .point { order: -1; }.point { padding: 18px; min-height: 140px; gap: 12px; }
+  .point__icon { width: 44px; height: 44px; font-size: 22px; }.point__title { font-size: 17px; }
+  .coating-photo { height: auto; aspect-ratio: 2/1; }.coating-bottom { margin-top: 28px; gap: 20px; }
+  .price-note { padding: 0; }.svc-list { gap: 24px; }
+  .svc,.svc--rev { grid-template-columns: 58px minmax(0,1fr); grid-template-areas: "num body" "photo photo"; gap: 20px 12px; padding: 28px 22px; }
+  .svc__photo { width: 210px; justify-self: center; }.svc__text { font-size: 14px; }
+  .news,.faq { padding-block: 40px; }.news__item { grid-template-columns: 90px 1fr; gap: 8px; padding-block: 16px; }
+  .news__title { grid-column: 1/-1; margin-left: 0; font-size: 14px; }.news .sec-head { margin-bottom: 20px; }
+  .faq .sec-head { margin-bottom: 28px; }.qa { padding: 18px 14px; }.qa__q { font-size: 16px; padding-left: 42px; }.qa__a { padding-left: 42px; line-height: 1.8; }
+  .contact__inner { padding: 24px 20px 36px; }.contact .sec-head { margin-bottom: 32px; }.contact__body { grid-template-columns: 1fr; gap: 30px; }
+  .contact__tel-num { font-size: 38px; }.contact__addr { margin-top: 24px; font-size: 12px; }
+  .footer__inner { grid-template-columns: 1fr; padding-top: 30px; }.footer__cols { padding-top: 6px; gap: 14px; }.footer__head,.footer__col a { font-size: 12px; }
+  .footer__addr { font-size: 12px; }.footer__copy { margin-inline: 20px; font-size: 10px; }
+}
+@media (max-width: 380px) { .header__tel-num { font-size: 13px; }.header__inner { gap: 10px; }.hero__action { font-size: 14px; } }

@@ -1,0 +1,12 @@
+/* FAQ header matches the service detail pages. */
+.header__inner { padding-left: 24px; gap: 60px; }
+.logo { width: 170px; }.logo__icon { width: 170px; height: 97px; }
+.gnav { gap: 26px; }.gnav__link { font-size: 14px; }
+@media (max-width: 1250px) { .header__inner { gap: 24px; }.gnav { gap: 18px; } }
+@media (max-width: 1024px) { .header__tel { margin-left: auto; } }
+@media (max-width: 700px) {
+ :root { --header-h: 80px; }
+ .header__inner { padding-inline: 16px; gap: 16px; }.logo,.logo__icon { width: 112px; height: 64px; }
+ .header__tel-note { display: none; }.header__tel-num { font-size: 16px; }.menu-btn { padding: 10px; gap: 4px; }
+}
+@media (max-width: 380px) { .header__tel-num { font-size: 13px; }.header__inner { gap: 10px; } }
